@@ -1,0 +1,56 @@
+.FlexSelect {
+    padding: 10px;
+
+    .selectionContainer {
+        position: relative;
+        .FlexSelect-el {
+            border: solid 1px rgba(37, 37, 247, 0.479);
+            transition: all ease .5s;
+            cursor: pointer;
+
+            &.selected {
+                border: solid 3px rgba(37, 37, 247, 0.479);
+
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.561);
+            }
+
+            
+
+            &.remove {
+                position: relative;
+                border: none;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 5;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all ease .6s;
+                    background: #fc4a1a;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #b11818, #ff3700); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                }
+
+                &.selected {
+                    &::before {
+                        visibility: visible;
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+
+    .controls {
+        .btn {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}

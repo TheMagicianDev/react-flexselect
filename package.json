@@ -1,0 +1,32 @@
+{
+  "name": "react-flexselect",
+  "version": "1.0.0",
+  "description": "A very nice select element component that privilege the renderer pattern and headless-ui. You get a mutator, and use it on your list elements. With different events ...etc.",
+  "main": "index.jsx",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TheMagicianDev/react-selectflex.git"
+  },
+  "author": "Mohamed Lamine Allal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheMagicianDev/react-selectflex/issues"
+  },
+  "homepage": "https://github.com/TheMagicianDev/react-selectflex#readme",
+  "dependencies": {
+    "classnames": "2.2.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.3"
+  },
+  "keywords": [
+    "react",
+    "flexible",
+    "select",
+    "selection",
+    "elements",
+    "single",
+    "multiple",
+    "healdess-ui"
+  ]
+}
